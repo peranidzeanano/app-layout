@@ -1,0 +1,145 @@
+/*NULLIFY*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+h a:focus,
+a:active nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* ____________________________ */
+
+body {
+
+  display: grid;
+  grid-template-columns: 50px 300px 1fr 300px;
+  grid-template-rows: 50px 1fr;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  grid-row: 1/-1;
+  padding:15px;
+}
+
+maniu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  background-color: rgb(77, 37, 171);
+  grid-column: 2/-1;
+  padding: 15px;
+}
+aside {
+    background-color: rgb(184, 178, 178);
+  text-align: center;
+  padding:40px;
+
+}
+
+button {
+  color: white;
+  background-color: rgb(22, 22, 111);
+  padding: 5px;
+}
+
+button:last-child{
+  background-color: red;
+  margin-left: auto;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:scroll;
+    background-color: rgb(184, 178, 178);
+    gap:15px;
+    padding:40px;
+}
+
+.email{
+padding: 30px 50px;
+   background-color:  gray;
+}
+
+div{
+    text-align: center;
+    padding:40px;
+}
